@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Safe Shop Place Order</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<!-- -->
+<script>var __links = document.querySelectorAll('a');function __linkClick(e) { parent.window.postMessage(this.href, '*');} ;for (var i = 0, l = __links.length; i < l; i++) {if ( __links[i].getAttribute('data-t') == '_blank' ) { __links[i].addEventListener('click', __linkClick, false);}}</script>
+<script src="js/jquery.min.js"></script>
+<script>$(document).ready(function(c) {
+	$('.alert-close').on('click', function(c){
+		$('.message').fadeOut('slow', function(c){
+	  		$('.message').remove();
+		});
+	});	  
+});
+</script>
+</head>
+<body>
+<!-- contact-form -->	
+<div class="message warning">
+<div class="inset">
+	<div class="login-head">
+		<h1>Place Order</h1>
+		 <div class="alert-close"> </div> 			
+	</div>
+		<form method="post">
+			<li>
+				<input name="productId" type="number" class="text" value="<%= productId %>" placeholder="Product Id" onfocus="this.placeholder = '';" onblur="if (this.placeholder == '') {this.placeholder = 'Product Id';}">
+			</li>
+				<div class="clear"> </div>
+			<li>
+				<input name="amount" type="number" placeholder="Amount" onfocus="this.placeholder = '';" onblur="if (this.placeholder == '') {this.placeholder = 'Amount';}">
+			</li>
+			<div class="clear"> </div>
+			<div class="submit">
+				<input type="submit" onclick="myFunction()" value="OK" >
+				
+						  <div class="clear">  </div>	
+			</div>
+				
+		</form>
+		</div>					
+	</div>
+	</div>
+	<div class="clear"> </div>
+<!--- footer --->
+<!-- <div class="footer">
+	<p>Copyright &copy; 2014.</p>
+</div>
+
+</body>
+</html> -->

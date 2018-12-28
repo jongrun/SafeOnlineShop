@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<mata charset="UTF-8">
+	<title>shop</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+	<h1 style="font-size: 30px; color: #fff; font-weight: bold; margin: 10px;">Shop: <%= shopAddress%></h1>
+	<p style="font-size: 20px; color: #fff; margin: 10px">seller: <%= seller%></p>
+	<p style="font-size: 20px; color: #fff; margin: 10px">balance: <%= balance%> Wei</p><br>
+	<p style="font-size: 20px; color: #fff; margin: 10px">Products:</p>
+	<ul style="font-size: 18px; color: #fff; margin: 10px">
+		<% for(var i = 0; i < products.length; i++){ %>
+		<li >
+			<a href="<% if(account == seller){ %> 
+						/setStock?productId=<%=products[i].id%>
+					<% } else { %>
+						/placeOrder?productId=<%=products[i].id%>
+					<% } %>" style="font-size: 18px; color: #ccc; margin: 10px">
+				id:  <%=products[i].id%>
+				description: <%=products[i].description%>
+				price:  <%=products[i].price%>
+				stock:  <%=products[i].stock%>
+			</a>
+		</li>
+		<% } %>
+	</ul><br>
+
+	<div>
+		<% if(account == seller){ %>
+		<p style="font-size: 20px; color: #fff; margin: 10px">seller: </p>
+		<a href="addNewProduct"><button class="button" style="margin: 10px">Add New Product</button>
+		<a href="setStock"><button class="button" style="margin: 10px">Set Stock</button><br><br><br><br><br>
+		<% } else { %>
+		<p style="font-size: 20px; color: #fff; margin: 10px">buyer: </p>
+		<a href="placeOrder"><button class="button" style="margin: 10px">Place Order</button>
+		<a href="confirmReceived"><button class="button" style="margin: 10px">Confirm Received</button>
+		<% } %>
+	</div>
+</body>
+</html>
