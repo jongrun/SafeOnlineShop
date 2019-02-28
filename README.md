@@ -1,5 +1,5 @@
 
-
+# 图片不能正常显示，完整图片显示请看[README.pdf](https://github.com/Runner1014/SafeOnlineShop/blob/master/README.pdf)
 
 # 一、选题背景与依据
 
@@ -19,7 +19,7 @@
 
 - 登录
 
-  在首页输入账户地址，点击 "Sign in" 进入个人主页。（图片不能正常显示，看README.pdf可以有图片）
+  在首页输入账户地址，点击 "Sign in" 进入个人主页。（图片不能正常显示，看[README.pdf](https://github.com/Runner1014/SafeOnlineShop/blob/master/README.pdf)可以有图片）
 
   ![1545992574311](C:\Users\lenov\AppData\Roaming\Typora\typora-user-images\1545992574311.png)
 
